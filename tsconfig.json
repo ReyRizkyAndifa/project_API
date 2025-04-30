@@ -1,0 +1,11 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    "baseUrl": ".", // Pastikan baseUrl mengarah ke root
+    "paths": {
+      "App/*": ["app/*"] // Alihkan path alias 'App/*' ke folder 'app/*'
+    }
+  }
+}

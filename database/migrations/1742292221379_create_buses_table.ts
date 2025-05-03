@@ -8,9 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('keberangkatan')
       table.string('tujuan')
-      table.decimal('jarak')
-      table.integer('durasi')
-      table.json('koordinat')
+      table.dateTime('waktu')
 
       table.timestamp('created_at', { useTz: true }).defaultTo(this.now())
       table.timestamp('updated_at', { useTz: true }).defaultTo(this.now())

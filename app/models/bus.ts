@@ -12,13 +12,7 @@ export default class Bus extends BaseModel {
   declare tujuan: string
 
   @column()
-  declare jarak: number
-
-  @column()
-  declare durasi: number
-
-  @column()
-  declare koordinat: JSON
+  declare waktu: DateTime
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

@@ -10,9 +10,7 @@ export default class BusesController {
       'id',
       'keberangkatan',
       'tujuan',
-      'jarak',
-      'durasi',
-      'koordinat'
+      'waktu',
     )
 
     return {
@@ -27,9 +25,7 @@ export default class BusesController {
     const newBus = await Bus.create({  
       keberangkatan: data.keberangkatan,
       tujuan: data.tujuan,
-      jarak: data.jarak,
-      durasi: data.durasi,
-      koordinat: data.koordinat,
+      waktu: data.waktu,
     })
 
     return {
@@ -59,9 +55,7 @@ export default class BusesController {
       .merge({   
         keberangkatan: data.keberangkatan,
         tujuan: data.tujuan,
-        jarak: data.jarak,
-        durasi: data.durasi,
-        koordinat: data.koordinat,
+        waktu: data.waktu,
       })
       .save()
 
